@@ -1,0 +1,10 @@
+caches:
+  - name: "yarn"
+    cache_key:
+      - "yarn"
+      - agent: "os"
+      - agent: "arch"
+        fallback_limit: true
+      - checksum: "yarn.lock"
+    target_paths:
+      - "~/.yarn/berry/cache"

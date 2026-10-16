@@ -35884,6 +35884,8 @@ __metadata:
   dependenciesMeta:
     "@react-spring/core@9.3.0":
       built: false
+    "@sentry/cli@1.77.1":
+      built: false
     fsevents:
       optional: true
   languageName: unknown

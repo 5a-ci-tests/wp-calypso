@@ -4,6 +4,9 @@ set -euo pipefail
 
 # The workspace is a mounted volume; Yarn's global cache lives on another filesystem.
 export USE_HARD_LINKS=false
+# Skip runtime binaries (Playwright browsers and Electron). The npm packages still install.
+export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+export ELECTRON_SKIP_BINARY_DOWNLOAD=1
 # Root postinstall compiles workspace packages. This step only fetches dependencies.
 export SKIP_CALYPSO_POSTINSTALL=true
 

@@ -19,5 +19,8 @@ export npm_config_nodedir=/usr/local
 
 # Checked-in Yarn 4.0.2. The Node image only ships Yarn 1.22.
 buildkite-agent cache restore --name yarn
+
+echo "--- :yarn: Installing dependencies..."
 .yarn/releases/yarn-4.0.2.cjs install --immutable --inline-builds
+
 buildkite-agent cache save --name yarn

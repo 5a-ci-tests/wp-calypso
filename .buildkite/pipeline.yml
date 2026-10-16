@@ -3,9 +3,6 @@
 
 # Installs every workspace dependency declared in the root lockfile.
 
-env:
-  BUILDKITE_AGENT_CACHE_STORE_URL: "s3://buildkite-cache-forno/wp-calypso?region=us-east-1"
-
 steps:
   - label: ":yarn: Install dependencies"
     key: install-dependencies
